@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agus Salim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+                /* Mulai dari luar layar sebelah kiri */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+                /* Mulai dari luar layar sebelah kanan */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+                /* Mulai dari luar layar atas */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+                /* Mulai dari luar layar bawah */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .article-1 {
+            animation: slideInFromLeft 2s ease-in-out;
+            /* Ganti dengan animasi lain sesuai kebutuhan */
+        }
+
+        .article-2 {
+            animation: slideInFromBottom 2s ease-in-out;
+        }
+
+        .article-3 {
+            animation: slideInFromRight 2s ease-in-out;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex items-center justify-between p-6 shadow-lg lg:px-8 fixed top-0 w-full bg-transparent z-50 backdrop-blur-md"
+            aria-label="Global">
+            <div class="lg:flex space-x-4">
+                <a href="./index.html"
+                    class="text-sm font-semibold leading-6 text-gray-900 hover:tracking-widest transition-all duration-500 hover:scale-110 hover:text-purple-600">Home</a>
+                <a href="/testing/src/blog.html"
+                    class="text-sm font-semibold leading-6 text-gray-900 hover:tracking-widest transition-all duration-500 hover:scale-110 hover:text-purple-600">Blog</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://www.instagram.com/agsslmmm_/" target="_blank" rel="noopener noreferrer">
+                    <img src="../public/instagram-2016-logo-svgrepo-com.svg"
+                        class="w-8 h-8 hover:scale-110 transition-all duration-500" alt="">
+                </a>
+                <a href="https://github.com/Agsslmmmmm" target="_blank" rel="noopener noreferrer">
+                    <img src="../public/github-f-svgrepo-com.svg"
+                        class="w-8 h-8 hover:scale-110 transition-all duration-500" alt="">
+                </a>
+            </div>
+        </nav>
+
+        </div>
+    </header>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 fade-in mt-24">
+        <div
+            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <article id="article-1"
+                class="flex max-w-xl flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                    <a href="./article1.html"
+                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Projects</a>
+                </div>
+                <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="./article1.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 1. KONSEP DASAR
+                        </a>
+                    </h3>
+            
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, aspernatur?
+                    </p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="../public/profile.png"
+                        alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">
+                            <a href="./article1.html">
+                                <span class="absolute inset-0"></span>
+                                Agus Salim
+                            </a>
+                        </p>
+                        <p class="text-gray-600">Dev</p>
+                    </div>
+                </div>
+            </article>
+            <article id="article-2"
+                class="flex max-w-xl flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                    <a href="#"
+                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                </div>
+                <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="#">
+                            <span class="absolute inset-0"></span>
+                            Lorem ipsum dolor sit amet.
+                        </a>
+                    </h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, eaque.</p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="../public/profile.png"
+                        alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Agus Salim
+                            </a>
+                        </p>
+                        <p class="text-gray-600">Dev</p>
+                    </div>
+                </div>
+            </article>
+            <article id="article-3"
+                class="flex max-w-xl flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                    <a href="#"
+                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                </div>
+                <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="#">
+                            <span class="absolute inset-0"></span>
+                            Boost your conversion rate
+                        </a>
+                    </h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error
+                        voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus
+                        unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="../public/profile.png"
+                        alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Agus Salim
+                            </a>
+                        </p>
+                        <p class="text-gray-600">Dev</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- More posts... -->
+        </div>
+    </div>
+
+
+    <div class="mt-20">
+        <footer class="bg-footer text-gray-600 p-2 shadow-inner">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2023 Agus Salim. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const article1 = document.getElementById('article-1');
+            const article2 = document.getElementById('article-2');
+            const article3 = document.getElementById('article-3');
+
+            // Tambahkan kelas 'enter' saat dokumen dimuat
+            article1.classList.add('article-1');
+            article2.classList.add('article-2');
+            article3.classList.add('article-3');
+            // Hilangkan kelas 'hidden' setelah 100ms untuk memberikan waktu transisi CSS
+            setTimeout(() => {
+                article1.classList.remove('hidden');
+                article2.classList.remove('hidden');
+                article3.classList.remove('hidden');
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
